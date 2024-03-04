@@ -1351,7 +1351,7 @@
   }
   .text6 {
     height: 65px;
-    border-radius: var(--br-3xs);
+    border-radius: 25px !important;
     background-color: var(--white-primary);
     align-items: flex-end;
     justify-content: center;
@@ -1657,3 +1657,6 @@
   
   }
   
+  nav a {
+    text-decoration: none;
+  }
