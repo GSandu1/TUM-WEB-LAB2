@@ -1,3 +1,5 @@
+
+
 .unsplashtqpypka92k8-icon {
     position: absolute;
     top: 1274px;
@@ -7,13 +9,68 @@
     height: 800px;
     object-fit: cover;
   }
-  .desktop-1440-child {
-    position: absolute;
-    top: 3337px;
-    left: 935px;
-    width: 179.5px;
-    height: 134px;
+
+  .mascot {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    z-index: 40;
+    opacity: 0; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+  
+  .mascotPng {
+    width: 200px;
+    height: auto;
+  }
+  
+  @keyframes slideIn {
+    from {
+      right: -150px; 
+      opacity: 0;
+    }
+    to {
+      right: 80px; 
+      opacity: 1;
+    }
+  }
+  
+  @keyframes moveLeftRight {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(20px); }
+  }
+  
+  .mascot-message {
+    display: none; 
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    position: absolute;
+    top: -10px;
+    left: -220px; 
+    width: 200px;
+    font-family: var(--caption);
+    font-size: var(--caption-size);
+  }
+  
+  .mascot-cta {
+    color: var(--neutral-white) !important;
+    margin-top: 15px;
+    display: block;
+    background: var(--cta-color);
+    text-align: center;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
+  
+
+
   .photo-2023-06-28-12-59-15-1-icon {
     position: absolute;
     top: 3330px;
@@ -81,7 +138,7 @@
     flex-direction: column;
     padding: 46px 0 0;
     box-sizing: border-box;
-    min-width: 351px;
+    /* min-width: 351px; */
     font-size: var(--font-size-29xl);
     color: var(--black-primary);
   }
@@ -235,7 +292,7 @@
     align-items: flex-start;
     justify-content: flex-start;
     gap: 20px 0;
-    min-width: 377px;
+    /* min-width: 377px; */
     max-width: 100%;
     font-size: var(--font-size-xl);
     color: var(--black-75);
@@ -247,7 +304,7 @@
     max-width: 100%;
   }
   .frame-group1 {
-    width: 781px;
+    /* width: 781px; */
     align-items: flex-end;
     justify-content: flex-start;
     gap: 0 27px;
@@ -258,14 +315,9 @@
     justify-content: space-between;
     gap: var(--gap-xl);
   }
-  .rectangle-shape,
-  .text-block {
-    display: flex;
-    justify-content: flex-start;
-    max-width: 100%;
-  }
+
   .rectangle-shape {
-    flex: 1;
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 20px 0;
@@ -286,6 +338,7 @@
   
   }
   .recommended-destination {
+    text-align: center;
     margin: 0;
     position: relative;
     font-size: inherit;
@@ -804,10 +857,10 @@
     width: 1200px;
   }
   .frame-airplane-mode-on {
-    width: 1920px;
+    width: 100%;
     flex-direction: row;
     align-items: flex-start;
-    padding: 0 var(--padding-5xs) 82px var(--padding-xl);
+
     box-sizing: border-box;
   }
   .star-shape-child {
@@ -909,6 +962,19 @@
     object-fit: cover;
     z-index: 3;
   }
+
+  .bf333edb-755e-4f55-8f7e-5a7858-icon1 {
+    position: absolute;
+    height: calc(100% - 5px);
+    /* bottom: 892px; */
+
+    left: 27px;
+    border-radius: 160.5px;
+    max-height: 100%;
+    width: 135.3px;
+    object-fit: cover;
+    z-index: 3;
+  }
   .vector-parent {
     position: absolute;
     height: 100%;
@@ -948,7 +1014,7 @@
     flex: 1;
     align-items: center;
     justify-content: center;
-    min-width: 377px;
+
     height: auto;
   }
   .frame-group-child {
@@ -1038,8 +1104,8 @@
     align-items: flex-end;
     padding: 0px 0px 200px 0px;
     position: relative;
-    min-width: 377px;
-    min-height: 410px;
+
+  
     z-index: 1;
   }
   .rectangle-with-rounded-corners {
@@ -1156,10 +1222,7 @@
     text-align: center;
     color: var(--white-primary);
   }
-  .wander-llc- {
-    line-height: 209%;
-    white-space: nowrap;
-  }
+
   .alerts,
   .blog,
   .review,
@@ -1179,14 +1242,11 @@
     color: var(--color-gray-100);
   }
   .wander-llc-all-right-reserve-parent {
-    width: 1200px;
+
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 0 0 var(--padding-xl);
-    box-sizing: border-box;
-    gap: var(--gap-xl);
+
+
+
     max-width: 100%;
     font-size: var(--font-size-xl);
     color: var(--black-75);
@@ -1194,7 +1254,6 @@
   .logo {
     position: absolute;
     top: 1330px;
-    left: 36px;
     max-width: 1920px;
     display: flex;
     flex-direction: column;
@@ -1417,7 +1476,7 @@
     background-repeat: no-repeat;
     background-position: top;
     min-height:1300px;
-    width:100%;
+    width:100vw;
   }
   
   .text9 {
@@ -1458,25 +1517,13 @@
     z-index: 1;
   }
   
-  .text7,
-  .wander-sphere-frame {
+  .text7{
     display: flex;
     justify-content: flex-start;
-    max-width: 100%;
+    
   }
   
-  .wander-sphere-frame {
-    position: absolute;
-    top: 0;
-    left: -4px;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    text-align: left;
-    font-size: var(--font-size-lg);
-    color: var(--black-primary);
-    font-family: var(--font-poppins);
-  }
+
   .desktop-1440 {
     width: 100%;
     /* height: 7917px;
@@ -1485,6 +1532,54 @@
     overflow: hidden;
     letter-spacing: normal;
   }
+
+  .destinations-section {
+    background-color: var(--color-gainsboro);
+    text-align: center;
+    padding: 20px;
+    display: none;
+  }
+  
+  .destinations-section h2 {
+    color: var(--black-primary);
+  }
+  
+  .destinations-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .destination {
+    width: 100%; /* For mobile screens */
+    background-color: var(--white-primary);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+  }
+  
+  .destination img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .destination h3 {
+    color: var(--blue-primary);
+    margin: 10px 0;
+    margin-top: 30px;
+    font-size: var(--font-size-17xl);
+  }
+  
+  .destination p {
+    color: var(--color-darkgray);
+    padding: 0 15px 20px 15px;
+    font-size: var(--font-size-17xl);
+  }
+
+  .titleText{
+    font-size: var(--font-size-29xl);
+  }
+
   @media screen and (max-width: 1200px) {
     .text2 {
       gap: 135px 0;
@@ -1493,6 +1588,10 @@
     }
     .text7 {
       gap: 84px 0;
+    }
+
+    .text-block{
+      display: none !important;
     }
   }
   @media screen and (max-width: 1050px) {
@@ -1510,9 +1609,8 @@
     .treloo-llc- {
       display: none;
     }
-    .wander-llc-all-right-reserve-parent {
-      width: 828px;
-    }
+
+
     .explore-beyond-limits {
       font-size: 51px;
     }
@@ -1529,10 +1627,17 @@
     .text10 {
       flex-wrap: wrap;
     }
+    .frame-text-planner {
+      grid-template-columns: repeat(2, minmax(210px, 210px));
+    }
   }
+
   @media screen and (max-width: 750px) {
     .january-saturday {
       min-width: 100%;
+    }
+    .travelDiv {
+      flex-direction: column;
     }
     .frame-group1 {
       flex-wrap: wrap;
@@ -1562,6 +1667,36 @@
       height: auto;
       min-height: 7917;
     }
+
+    .bf333edb-755e-4f55-8f7e-5a7858-icon1 {
+      /* bottom: 2670px; */
+    }
+
+    .rectangle-with-rounded-corners {
+      padding-left: 3%;
+      padding-right: 3%;
+      display: flex;
+      flex-direction: column;
+      gap:90px;
+    }
+
+    .review-tips-alerts-blog2{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .text4{
+      display: none;
+    }
+
+    .wander-sphere{
+      width: auto;
+    }
+    .destinations-section {
+      display: block;
+    }
+
   }
   
   @media screen and (max-width: 600px){
@@ -1575,6 +1710,9 @@
   
   
   @media screen and (max-width: 450px) {
+    .frame-airplane-mode-on{
+      padding: 0px;
+    }
     .hotel-star-rating {
       font-size: var(--font-size-3xl);
     }
@@ -1595,9 +1733,9 @@
     .recommended-destination {
       font-size: var(--font-size-10xl);
     }
-    .frame-text-planner {
+    /* .frame-text-planner {
       grid-template-columns: minmax(210px, 1fr);
-    }
+    } */
     .grama-a,
     .our-trip-to {
       font-size: var(--font-size-base);
@@ -1619,9 +1757,6 @@
     }
     .review-parent {
       display: none;
-    }
-    .wander-llc-all-right-reserve-parent {
-      width: 793px;
     }
     .explore-beyond-limits {
       font-size: var(--font-size-19xl);
@@ -1654,9 +1789,15 @@
     .text10 {
       gap: 0 31px;
     }
+
+    .logo{
+      left:0px;
+    }
   
   }
   
   nav a {
     text-decoration: none;
   }
+
+  
